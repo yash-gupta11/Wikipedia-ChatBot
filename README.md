@@ -26,7 +26,10 @@ This project uses **LangChain**, **HuggingFace embeddings**, **FAISS vector stor
 ---
 
 ## 📂 Project Structure
-
+Wikipedia-ChatBot/
+├── main.py # Entry point of the chatbot
+├── requirements.txt # Dependencies
+└── README.md # Project documentation
 ---
 
 ## ⚙️ Workflow
@@ -58,9 +61,16 @@ This project uses **LangChain**, **HuggingFace embeddings**, **FAISS vector stor
    ```bash
    git clone https://github.com/your-username/Wikipedia-ChatBot.git
    cd Wikipedia-ChatBot
-python -m venv venv
-source venv/bin/activate   # On Linux/Mac
-venv\Scripts\activate      # On Windows
-pip install -r requirements.txt
-python main.py
+2. Create a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # On Linux/Mac
+   venv\Scripts\activate      # On Windows
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+4. Run the chatbot:
+   ```bash
+   python main.py
+
 
