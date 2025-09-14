@@ -26,10 +26,13 @@ This project uses **LangChain**, **HuggingFace embeddings**, **FAISS vector stor
 ---
 
 ## 📂 Project Structure
+
+```
 Wikipedia-ChatBot/
-| -- main.py # Entry point of the chatbot
-| -- requirements.txt # Dependencies
-| -- README.md # Project documentation
+│-- main.py              # Entry point of the chatbot
+│-- requirements.txt     # Dependencies
+│-- README.md            # Project documentation
+```
 ---
 
 ## ⚙️ Workflow
@@ -78,4 +81,5 @@ Wikipedia-ChatBot/
    Please enter the Title of the Wikipedia Page : Karthik Aryan
    Question: is karthik aryan career discussed in this page?
    Answer: Yes, the page includes details about his acting career.
+
 
