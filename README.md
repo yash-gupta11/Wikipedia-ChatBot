@@ -26,3 +26,41 @@ This project uses **LangChain**, **HuggingFace embeddings**, **FAISS vector stor
 ---
 
 ## 📂 Project Structure
+
+---
+
+## ⚙️ Workflow
+1. **User Input**  
+   You enter the title of a Wikipedia page (e.g., `Cristiano Ronaldo`).  
+
+2. **Wikipedia Fetch**  
+   The script fetches the entire content of that Wikipedia page using `wikipedia-api`.  
+
+3. **Text Splitting**  
+   Content is chunked into smaller parts using `RecursiveCharacterTextSplitter` for better retrieval.  
+
+4. **Embeddings & Vector Store**  
+   Each chunk is embedded using HuggingFace (`all-MiniLM-L6-v2`) and stored in FAISS.  
+
+5. **Retriever**  
+   When you ask a question, FAISS retrieves the most relevant chunks of text.  
+
+6. **LLM Answer Generation**  
+   The retrieved chunks are passed to Ollama’s `phi3.5` model, which generates a response.  
+
+7. **Final Output**  
+   You get an AI-generated answer strictly based on the Wikipedia page content.  
+
+---
+
+## ▶️ How to Run
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/your-username/Wikipedia-ChatBot.git
+   cd Wikipedia-ChatBot
+python -m venv venv
+source venv/bin/activate   # On Linux/Mac
+venv\Scripts\activate      # On Windows
+pip install -r requirements.txt
+python main.py
+
